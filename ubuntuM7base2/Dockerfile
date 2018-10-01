@@ -7,5 +7,5 @@ RUN apt-get update && apt-get install -y debconf-utils openssh-server sudo tcpdu
 
 COPY supervisor-sshd /etc/supervisor/conf.d
 
-CMD  supervisord -n
+CMD  supervisord -nc /etc/supervisor/supervisor.conf
 
