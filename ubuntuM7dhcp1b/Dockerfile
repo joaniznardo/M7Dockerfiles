@@ -1,7 +1,7 @@
 ## partim d'una nova base per poder generar la imatge de manera automàtica: automated builds
 
 #FROM ubuntu:14.04
-FROM joaniznardo/ubuntum7base2
+FROM joaniznardo/ubuntum7baseb
 
 MAINTAINER joaniznardo (github)
 

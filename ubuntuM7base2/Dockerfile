@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 
 MAINTAINER joaniznardo (github)
 
-RUN apt-get update && apt-get install -y debconf-utils openssh-server sudo tcpdump inotify-tools dnsutils supervisor && mkdir -p /var/run/sshd && useradd -m ubuntu && echo "ubuntu:ubuntu" | chpasswd && adduser ubuntu sudo && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y curl debconf-utils dnsutils inotify-tools openssh-server sudo supervisor tcpdump traceroute && mkdir -p /var/run/sshd && useradd -m ubuntu && echo "ubuntu:ubuntu" | chpasswd && adduser ubuntu sudo 
 
 COPY supervisor-sshd.conf /etc/supervisor/conf.d
 
