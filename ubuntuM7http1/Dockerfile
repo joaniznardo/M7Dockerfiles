@@ -9,4 +9,4 @@ MAINTAINER joaniznardo (github)
 #RUN useradd -m ubuntu && echo "ubuntu:ubuntu" | chpasswd && adduser ubuntu sudo
 RUN apt-get install -y apache2 
 
-CMD /etc/init.d/apache2 start 
+#CMD /etc/init.d/apache2 start 
